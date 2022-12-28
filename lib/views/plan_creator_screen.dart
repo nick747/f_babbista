@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:Babbista/plan_provider.dart';
 import 'package:Babbista/views/plan_screen.dart';
@@ -24,7 +23,10 @@ class _PlanCreatorScreenState extends State<PlanCreatorScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text('Babbista')),
+        appBar: AppBar(
+          title: const Text('Babbista'),
+          centerTitle: true,
+        ),
         body: Column(
           children: [
             _buildListCreator(),
@@ -40,9 +42,12 @@ class _PlanCreatorScreenState extends State<PlanCreatorScreen> {
         color: Theme.of(context).cardColor,
         child: TextField(
             controller: textController,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: 'Inserisci una lista',
               contentPadding: EdgeInsets.all(20),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(17),
+              )
             ),
             onEditingComplete: addPlan),
       ),
@@ -69,9 +74,9 @@ class _PlanCreatorScreenState extends State<PlanCreatorScreen> {
       return Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          const Icon(Icons.note, size: 100, color: Colors.green),
+          const Icon(Icons.note_alt, size: 100, color: Colors.green),
           Text('Non hai ancora delle liste',
-              style: Theme.of(context).textTheme.headline5)
+              style: TextStyle(color: Colors.grey[700], fontSize: 27),)
         ],
       );
     }
