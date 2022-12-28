@@ -16,7 +16,7 @@ class MasterPlanApp extends StatelessWidget {
       title: 'Babbista',
       theme: ThemeData(
           primarySwatch: Colors.green,
-          fontFamily: GoogleFonts.getFont('Lato').fontFamily),
+          fontFamily: GoogleFonts.getFont('Poppins').fontFamily),
       debugShowCheckedModeBanner: false,
       home: const PlanCreatorScreen(),
     );
