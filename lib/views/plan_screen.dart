@@ -39,11 +39,15 @@ class _PlanScreenState extends State<PlanScreen> {
         return Future.value(true);
       },
       child: Scaffold(
-        appBar: AppBar(title: const Text("Babbista")),
+        appBar: AppBar(
+          title: const Text("Babbista"),
+          centerTitle: true,
+        ),
         body: Column(
           children: [
             Expanded(child: _buildList()),
-            SafeArea(child: Text(plan.completenessMessage))
+            SafeArea(child: Text(plan.completenessMessage)),
+            SizedBox(height: 20,),
           ],
         ),
         floatingActionButton: _buildAddTaskButton(),
