@@ -1,16 +1,7 @@
-# flutter_master_plan
+# Babbista
 
-A new Flutter project.
+Babbista is a list manager and creator made for St. Claus.
 
-## Getting Started
+Create a new list giving it a name and remove by sliding from right to left on it. Too add new tasks in a List, open it and click the '+' button in the bottom right. To check the items just click on the box next to them and to delete the items slide from right to left on it.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Work In Progress
